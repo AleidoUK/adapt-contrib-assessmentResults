@@ -27,23 +27,43 @@
                 "_score": 0,
                 "feedbackNotFinal": "Sorry, but you didn't pass. Take some time to review the course before giving it another try.",
                 "feedback": "Your score was below 25%.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": ""
+                },
                 "_allowRetry": true
             },
             {
                 "_score": 25,
                 "feedbackNotFinal": "Sorry, but you didn't pass. Up for another try?",
                 "feedback": "Your score was below 50%.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": ""
+                },
                 "_allowRetry": true
             },
             {
                 "_score": 50,
                 "feedbackNotFinal": "Nice try, but you didn't pass. Want to give it another go?",
                 "feedback": "Good effort, but your score was under 75%.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": ""
+                },
                 "_allowRetry": true
             },
             {
                 "_score": 75,
                 "feedback": "Great work. You passed your assessment with {{{scoreAsPercent}}}%.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": ""
+                },
                 "_allowRetry": false,
                 "_classes": "high-score"
             }

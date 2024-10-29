@@ -106,12 +106,23 @@ export default class AssessmentResultsModel extends ComponentModel {
     return feedbackBand.feedback;
   }
 
+  getFeedbackImage() {
+    const feedbackBand = this.get('_feedbackBand');
+
+    if (!feedbackBand) return '';
+
+    return feedbackBand._graphic;
+  }
+
   setFeedbackText() {
     const feedback = this.getFeedbackText();
+    const feedbackImage = this.getFeedbackImage();
 
     this.set({
       feedback: Handlebars.compile(feedback)(this.toJSON()),
-      body: this.get('_completionBody')
+      body: this.get('_completionBody'),
+      _graphic: feedbackImage
+
     });
   }
 

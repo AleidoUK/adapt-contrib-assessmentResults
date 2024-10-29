@@ -1,0 +1,31 @@
+.assessmentresults {
+  &__inner {
+    &.has-image {
+      display: flex;
+      flex-direction: row;
+
+      .assessmentresults__header-container {
+        padding-right: @component-body-margin;
+        flex-grow: 1;
+
+        .dir-rtl & {
+          padding-right: inherit;
+          padding-left: @component-body-margin;
+        }
+      }
+
+      @media (max-width: @device-width-medium) {
+        flex-direction: column;
+
+        .assessmentresults__header-container {
+          padding-right: 0;
+          padding-left: 0;
+        }
+
+        .assessmentresults__widget {
+          margin-top: @component-body-margin;
+        }
+      }
+    }
+  }
+}
